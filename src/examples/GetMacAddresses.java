@@ -38,7 +38,7 @@ public class GetMacAddresses {
 	}
 	
 	private static void sendArpToAll(){
-		for(int i = 1; i < 10; i++){	
+		for(int i = 1; i < 256; i++){	
 			sendArpRequest("192.168.1."+Integer.toString(i));					
 		}
 	}
